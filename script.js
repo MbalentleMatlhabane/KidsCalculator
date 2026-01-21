@@ -45,4 +45,18 @@ document.addEventListener("DOMContentLoaded", function () {
         muteButton.textContent = isMuted ? "🔇 Sound OFF" : "🔊 Sound ON";
     };
 
+    window.changeTheme = function (theme) {
+    const calculator = document.querySelector(".calculator");
+
+    calculator.classList.remove(
+        "blue-theme",
+        "pink-theme",
+        "green-theme",
+        "purple-theme"
+    );
+
+    calculator.classList.add(theme + "-theme");
+    document.querySelector(".calculator").classList.add("blue-theme");
+
+};
 });
