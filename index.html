@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kids Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+        <h1 class="calculator-title">🧮 MathBuddy</h1>
+
+        <input type="text" id="display" class="display" disabled>
+        <button class="btn-mute" onclick="toggleMute()">🔊 Sound ON</button>
+
+
+        <div class="buttons">
+            <button class="btn-clear" onclick="clearDisplay()">C</button>
+            <button class="btn-operator" onclick="addValue('/')">÷</button>
+            <button class="btn-operator" onclick="addValue('*')">×</button>
+            <button class="btn-operator" onclick="addValue('-')">−</button>
+
+            <button class="btn-number" onclick="addValue('7')">7</button>
+            <button class="btn-number" onclick="addValue('8')">8</button>
+            <button class="btn-number" onclick="addValue('9')">9</button>
+            <button class="btn-operator" onclick="addValue('+')">+</button>
+
+            <button class="btn-number" onclick="addValue('4')">4</button>
+            <button class="btn-number" onclick="addValue('5')">5</button>
+            <button class="btn-number" onclick="addValue('6')">6</button>
+
+            <button class="btn-number" onclick="addValue('1')">1</button>
+            <button class="btn-number" onclick="addValue('2')">2</button>
+            <button class="btn-number" onclick="addValue('3')">3</button>
+
+            <button class="btn-number" onclick="addValue('0')">0</button>
+            <button class="btn-number" onclick="addValue('.')">.</button>
+            <button class="btn-equals" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<!-- Sound Effects -->
+<audio id="clickSound" src="sounds/click.mp3"></audio>
+<audio id="clearSound" src="sounds/clear.mp3"></audio>
+<audio id="equalsSound" src="sounds/equals.mp3"></audio>
+<audio id="errorSound" src="sounds/error.mp3"></audio>
+
+<script src="script.js"></script>
+
+</html>
