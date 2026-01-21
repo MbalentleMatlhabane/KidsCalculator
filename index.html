@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Kids Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
@@ -13,6 +15,13 @@
 
         <input type="text" id="display" class="display" disabled>
         <button class="btn-mute" onclick="toggleMute()">🔊 Sound ON</button>
+
+        <div class="theme-options">
+    <button class="theme-btn blue" onclick="changeTheme('blue')"></button>
+    <button class="theme-btn pink" onclick="changeTheme('pink')"></button>
+    <button class="theme-btn green" onclick="changeTheme('green')"></button>
+    <button class="theme-btn purple" onclick="changeTheme('purple')"></button>
+</div>
 
 
         <div class="buttons">
